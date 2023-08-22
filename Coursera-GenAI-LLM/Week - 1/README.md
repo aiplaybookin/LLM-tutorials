@@ -1,31 +1,31 @@
 ## Encoder only : Autoencoding
-- Masked Language Models ( MLM), fill in blanks
+- ```Masked Language Models (MLM)```, fill in blanks
 - work as sequence-to-sequence models
 - Same length input and output. Mask the tokens. Bidirectional
-- Less used but can be trained for Classification task, sentiment analysis E.g. BERT, ROBERTA, Named Entity Recognition, word classification 
+- Less used but can be trained for Classification task, sentiment analysis, Named Entity Recognition, word classification  E.g. ``BERT``, ```ROBERTA``` 
 
 ## Encoder & Decoder : Span Corruption
 - Masks random sequence of tokens, these are then replaced with sentinel token,
-<Mask> |<Mask> = <X> : Sentinel token  
+Mask |Mask = X : ```Sentinel token```
 - Sentinel Token - special token added to vocabulary but are not from input text. Next the decoder is tasked to reconstruct the masked sequence auto regressively 
 - Perform well on sequence-to-sequence tasks such as translation, text summarisation, Q&A
 - The input sequence and the output sequence can be different lengths
 - Can scale and train this type of model to perform general text generation tasks
-E.g. BART and T5
+E.g. ```BART``` and ```T5```
 
 ## Decoder-only models : Auto regressive Models; 
-- Casual Language Model (CML), next word in sentence
+- ```Casual Language Model (CML)```, next word in sentence
 - As they have scaled, their capabilities have grown. 
-- Unidirectional
+- ```Unidirectional```
 - These models can now generalize to most tasks. 
-Examples - GPT family of models, BLOOM, Jurassic, LLaMA, Text generation
+Examples - GPT family of models,`` BLOOM``, ``Jurassic``, ``LLaMA``, Text generation
 
 
 ### Others 
 
 - Understanding of self-attention and multi-headed self-attention mechanism
 - Attention mechanisms in transformers are parallelizable, making them efficient on GPUs
-
+----
 
 - Transformer's power comes from learning relevance and context of all words in a sentence, using attention weights.
 - Attention weights apply to all words, allowing model to understand relationships and relevance.
@@ -44,7 +44,7 @@ Examples - GPT family of models, BLOOM, Jurassic, LLaMA, Text generation
 - Softmax layer normalizes logits into probability scores for each word.
 - The most likely predicted token has the highest probability score.
 
-
+----
 
 - Overview of the translation task using a transformer model.
 - Tokenization of input words using the same tokenizer as in training.
@@ -60,6 +60,7 @@ Examples - GPT family of models, BLOOM, Jurassic, LLaMA, Text generation
 - Encoder-only models perform classification tasks, while encoder-decoder models work on sequence-to-sequence tasks.
 - Decoder-only models like GPT family are commonly used and versatile.
 
+----
 
 - Methods and parameters to influence model's next-word generation decision.
 - Configuration parameters adjust model's behavior during inference, separate from training parameters.
