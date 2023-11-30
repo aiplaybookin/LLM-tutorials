@@ -82,3 +82,24 @@ Examples - GPT family of models,`` BLOOM``, ``Jurassic``, ``LLaMA``, Text gener
 - Iterative process of adapting and aligning model to performance needs.
 - Optimize model for deployment to maximize resource utilization and user experience.
 - Consider additional infrastructure to address LLM limitations.
+
+### Prompting
+![Prompting](./images/01_Prompting.png)
+
+### Types of LLM
+![typeOfLLM](./images/02_TypesOfLLM.png)
+
+### Base Model to Instruct Model
+![model2instruct](./images/03_BaseToInstructModel.png)
+
+### Tokens
+![tokens](./images/04_Tokens.png)
+
+### System, Assistant, User
+![system](./images/05_SystemAssistant.png)
+
+### Model Size & Compute
+![modelsize](./images/06_ModelSizeCompute.png)
+
+### Soft Prompt
+![softPrompt](./images/07_SoftPrompt.png)
